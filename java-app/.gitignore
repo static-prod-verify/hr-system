@@ -1,0 +1,30 @@
+# Compiled Java
+*.class
+*.jar
+*.war
+*.nar
+*.zip
+*.tar.gz
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Project
+.classpath
+.project
+.settings/
+*.iml
+
+# Spring Boot
+application-dev.properties
+application-prod.properties

@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: hr-system
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:ORCL
+    username: ${DB_USERNAME:hr_user}
+    password: ${DB_PASSWORD:hr_password}
+    driver-class-name: oracle.jdbc.OracleDriver
+  sql:
+    init:
+      mode: never  # Don't auto-init for this sample
+
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+
+logging:
+  level:
+    root: INFO
+    com.example.hr: DEBUG
+    org.springframework.web: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
